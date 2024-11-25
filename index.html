@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Demo Deploy Model Machine Learning</h2>
+<h4>Prediksi Harga Emas Berjangka</h4>
+<p>Nilai prediksi dalam Dollar per 1 troy ons emas, 1 troy ons setara dengan 31,1 gram</p>
+<form action="{{ url_for('predict') }}" method="post">
+  
+    
+                <br>
+                <br>
+
+                <label for="tahun">Input tahun:</label><br>
+                <input type="number" id="lname" name="tahun" ><br><br>
+                <button type="submit">Hasil Prediksi</button>
+                </form> 
+
+                <h2>Hasil prediksi harga emas adalah:</h2>
+                <h2>{{ hasil }}</h2>
+                <p>Harga yang tertera merupakan harga (Dollar) 1 troy ons emas atau setara dengan 31,1 gram. </p>
+
+
+</body>
+</html>
